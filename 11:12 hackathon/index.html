@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spell Blaster: The Adaptive Word War</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="home">
+  <div class="home-wrap">
+    <div class="home-card home-header">
+      <h1>Vocab Exercise Archade</h1>
+      <p>Practice vocablary with a game you like!</p>
+    </div>
+    <div class="home-grid">
+      <button id="chooseShooting" class="home-card">Shooting Game</button>
+      <button id="chooseVegetable" class="home-card">Vegitable Cutting Race</button>
+      <button id="choosePizza" class="home-card">Pizza & Mold Dash</button>
+    </div>
+  </div>
+</div>
+<div id="ui">
+  <div class="hud">
+    <div>Score: <span id="score">0</span></div>
+    <div>Health: <span id="health">100</span></div>
+    <div>Level: <span id="levelName">Fruits</span></div>
+    <div>Streak: <span id="streak">0</span> | Multiplier: <span id="multiplier">1x</span></div>
+  </div>
+  <div class="controls">
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="voiceBtn">Voice: Off</button>
+    <button id="summaryToggleBtn">Summary</button>
+    <button id="flashBtn">Flashcards</button>
+    <button id="homeBtn">Home</button>
+  </div>
+  <input id="answerInput" type="text" placeholder="Type English translation here" autocomplete="off" />
+</div>
+<canvas id="game" width="960" height="600"></canvas>
+<div id="summary" class="hidden">
+  <div class="summary-card">
+    <h2>Level Summary</h2>
+    <div id="summaryBody"></div>
+    <button id="nextLevelBtn">Next Level</button>
+    <button id="restartBtn">Restart</button>
+  </div>
+  </div>
+<div id="flashcards" class="hidden">
+  <div class="summary-card">
+    <h2>Flashcards</h2>
+    <div id="flashBody"></div>
+  </div>
+  </div>
+<div id="veg" class="hidden">
+  <div class="veg-hud">
+    <div class="veg-hide">Vegetable: <span id="vegName">—</span></div>
+    <div>Round: <span id="vegRound">1</span></div>
+    <div class="veg-hide">Difficulty: <span id="vegDiff">Easy</span></div>
+    <div>Timer: <span id="vegTimer">30.0</span>s</div>
+  </div>
+  <div class="veg-board" id="vegBoard"></div>
+  <div id="vegOverlay" class="veg-overlay hidden">
+    <div class="veg-overlay-content">
+      <div id="vegOverlayTitle">Missed</div>
+      <div id="vegOverlayPenalty">-50</div>
+    </div>
+  </div>
+  <img id="vegCarrot" class="veg-carrot hidden" alt="carrot" src="public/carrotnoword.PNG" />
+  <div class="veg-controls">
+    <button id="vegStart">START</button>
+    <button id="vegBack">Back to Home</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
