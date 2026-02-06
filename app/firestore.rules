@@ -1,0 +1,81 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Users collection
+    match /users/{userId} {
+      // Anyone authenticated can read any user (needed for referral lookups)
+      allow read: if isAuthenticated();
+
+      // Users can only create/update their own document
+      allow create: if isOwner(userId);
+      allow update: if isOwner(userId);
+
+      // Prevent deletion
+      allow delete: if false;
+    }
+
+    // Sessions collection
+    match /sessions/{sessionId} {
+      // Users can read their own sessions
+      allow read: if isAuthenticated() && resource.data.userId == request.auth.uid;
+
+      // Users can create/update their own sessions
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+      allow update: if isAuthenticated() && resource.data.userId == request.auth.uid;
+
+      // Prevent deletion
+      allow delete: if false;
+    }
+
+    // Purchases collection
+    match /purchases/{purchaseId} {
+      // Allow single document reads (get) for any authenticated user
+      // This is needed for duplicate transaction checking where the document may not exist yet
+      // Note: get = single document by ID, list = query multiple documents
+      allow get: if isAuthenticated();
+
+      // Users can only list/query their own purchases
+      allow list: if isAuthenticated() && resource.data.userId == request.auth.uid;
+
+      // Users can create purchases for themselves
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+
+      // Prevent updates and deletes (purchases are immutable)
+      allow update, delete: if false;
+    }
+
+    // Feedback collection
+    match /feedback/{feedbackId} {
+      // Users can create feedback for themselves
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+
+      // Users can read their own feedback
+      allow read: if isAuthenticated() && resource.data.userId == request.auth.uid;
+
+      // Prevent updates and deletes (feedback is immutable for users)
+      allow update, delete: if false;
+    }
+
+    // Contact Messages collection
+    match /contactMessages/{messageId} {
+      // Users can create contact messages for themselves
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+
+      // Users can read their own messages
+      allow read: if isAuthenticated() && resource.data.userId == request.auth.uid;
+
+      // Prevent updates and deletes (messages are immutable for users)
+      allow update, delete: if false;
+    }
+  }
+}

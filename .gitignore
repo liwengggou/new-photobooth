@@ -129,3 +129,9 @@ coverage/
 *.temp
 .cache/
 dist/
+
+# ===========================================
+# Testing directories (may contain secrets)
+# ===========================================
+resources/testing/.env
+resources/vertex-test/.env

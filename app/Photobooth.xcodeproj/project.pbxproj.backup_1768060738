@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80108C292F03108300227C32 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 80108C282F03108300227C32 /* FirebaseAnalytics */; };
+		80108C2B2F03108300227C32 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 80108C2A2F03108300227C32 /* FirebaseAuth */; };
+		80108C2D2F03108300227C32 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 80108C2C2F03108300227C32 /* FirebaseFirestore */; };
+		80108C2F2F03108300227C32 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 80108C2E2F03108300227C32 /* FirebaseStorage */; };
+		80108C322F0310E200227C32 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 80108C312F0310E200227C32 /* GoogleSignIn */; };
+		80108C342F0310E200227C32 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80108C332F0310E200227C32 /* GoogleSignInSwift */; };
+		807E39C82F040A5000F6E3C2 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 807E39C72F040A5000F6E3C2 /* FirebaseFunctions */; };
+		A1000001 /* PhotoboothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001 /* PhotoboothApp.swift */; };
+		A1000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000002 /* AppState.swift */; };
+		A1000003 /* AppDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000003 /* AppDestination.swift */; };
+		A1000004 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000004 /* RootView.swift */; };
+		A1000005 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000005 /* User.swift */; };
+		A1000006 /* PhotoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000006 /* PhotoSession.swift */; };
+		A1000007 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000007 /* Photo.swift */; };
+		A1000008 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000008 /* AuthViewModel.swift */; };
+		A1000009 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000009 /* CameraViewModel.swift */; };
+		A1000010 /* StyleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000010 /* StyleViewModel.swift */; };
+		A1000011 /* CollageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000011 /* CollageViewModel.swift */; };
+		A1000012 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000012 /* SplashScreen.swift */; };
+		A1000013 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000013 /* LoginScreen.swift */; };
+		A1000014 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000014 /* HomeScreen.swift */; };
+		A1000015 /* GalleryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000015 /* GalleryScreen.swift */; };
+		A1000016 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000016 /* SettingsScreen.swift */; };
+		A1000017 /* ReferralScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000017 /* ReferralScreen.swift */; };
+		A1000018 /* IntervalSelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000018 /* IntervalSelectionScreen.swift */; };
+		A1000019 /* CameraScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000019 /* CameraScreen.swift */; };
+		A1000020 /* PhotoReviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000020 /* PhotoReviewScreen.swift */; };
+		A1000021 /* StyleSelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000021 /* StyleSelectionScreen.swift */; };
+		A1000022 /* ProcessingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000022 /* ProcessingScreen.swift */; };
+		A1000023 /* CustomizationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000023 /* CustomizationScreen.swift */; };
+		A1000024 /* PreviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000024 /* PreviewScreen.swift */; };
+		A1000025 /* SuccessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000025 /* SuccessScreen.swift */; };
+		A1000026 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000026 /* FirebaseService.swift */; };
+		A1000027 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000027 /* GeminiService.swift */; };
+		A1000028 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000028 /* StorageService.swift */; };
+		A1000029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1000029 /* Assets.xcassets */; };
+		A1000030 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1000030 /* GoogleService-Info.plist */; };
+		A1000031 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000031 /* AnalyticsService.swift */; };
+		D0FB20522F12AC620080687E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FB20512F12AC620080687E /* MainTabView.swift */; };
+		D0FB20542F12AC840080687E /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FB20532F12AC840080687E /* StartScreen.swift */; };
+		D0FB20562F12ACA30080687E /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FB20552F12ACA30080687E /* ProfileScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		807E39C52F03B2FC00F6E3C2 /* Photobooth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Photobooth.entitlements; sourceTree = "<group>"; };
+		B1000001 /* PhotoboothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoboothApp.swift; sourceTree = "<group>"; };
+		B1000002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B1000003 /* AppDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDestination.swift; sourceTree = "<group>"; };
+		B1000004 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B1000005 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B1000006 /* PhotoSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSession.swift; sourceTree = "<group>"; };
+		B1000007 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		B1000008 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		B1000009 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		B1000010 /* StyleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewModel.swift; sourceTree = "<group>"; };
+		B1000011 /* CollageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewModel.swift; sourceTree = "<group>"; };
+		B1000012 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		B1000013 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		B1000014 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		B1000015 /* GalleryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryScreen.swift; sourceTree = "<group>"; };
+		B1000016 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		B1000017 /* ReferralScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferralScreen.swift; sourceTree = "<group>"; };
+		B1000018 /* IntervalSelectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalSelectionScreen.swift; sourceTree = "<group>"; };
+		B1000019 /* CameraScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreen.swift; sourceTree = "<group>"; };
+		B1000020 /* PhotoReviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoReviewScreen.swift; sourceTree = "<group>"; };
+		B1000021 /* StyleSelectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSelectionScreen.swift; sourceTree = "<group>"; };
+		B1000022 /* ProcessingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingScreen.swift; sourceTree = "<group>"; };
+		B1000023 /* CustomizationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationScreen.swift; sourceTree = "<group>"; };
+		B1000024 /* PreviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewScreen.swift; sourceTree = "<group>"; };
+		B1000025 /* SuccessScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessScreen.swift; sourceTree = "<group>"; };
+		B1000026 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		B1000027 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		B1000028 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		B1000029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1000030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1000031 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		B1000032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1000001 /* Photobooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photobooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0FB20512F12AC620080687E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTabView.swift; path = Photobooth/Sources/Navigation/MainTabView.swift; sourceTree = "<group>"; };
+		D0FB20532F12AC840080687E /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartScreen.swift; path = Photobooth/Sources/Views/Home/StartScreen.swift; sourceTree = "<group>"; };
+		D0FB20552F12ACA30080687E /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileScreen.swift; path = Photobooth/Sources/Views/Settings/ProfileScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80108C322F0310E200227C32 /* GoogleSignIn in Frameworks */,
+				807E39C82F040A5000F6E3C2 /* FirebaseFunctions in Frameworks */,
+				80108C292F03108300227C32 /* FirebaseAnalytics in Frameworks */,
+				80108C2F2F03108300227C32 /* FirebaseStorage in Frameworks */,
+				80108C342F0310E200227C32 /* GoogleSignInSwift in Frameworks */,
+				80108C2B2F03108300227C32 /* FirebaseAuth in Frameworks */,
+				80108C2D2F03108300227C32 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		807E39C62F040A5000F6E3C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1000001 = {
+			isa = PBXGroup;
+			children = (
+				E1000002 /* Photobooth */,
+				807E39C62F040A5000F6E3C2 /* Frameworks */,
+				E1000003 /* Products */,
+				D0FB20512F12AC620080687E /* MainTabView.swift */,
+				D0FB20532F12AC840080687E /* StartScreen.swift */,
+				D0FB20552F12ACA30080687E /* ProfileScreen.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		E1000002 /* Photobooth */ = {
+			isa = PBXGroup;
+			children = (
+				807E39C52F03B2FC00F6E3C2 /* Photobooth.entitlements */,
+				E1000004 /* Sources */,
+				B1000029 /* Assets.xcassets */,
+				B1000030 /* GoogleService-Info.plist */,
+				B1000032 /* Info.plist */,
+			);
+			path = Photobooth;
+			sourceTree = "<group>";
+		};
+		E1000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1000001 /* Photobooth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1000004 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E1000005 /* App */,
+				E1000006 /* Navigation */,
+				E1000007 /* Models */,
+				E1000008 /* ViewModels */,
+				E1000009 /* Views */,
+				E1000010 /* Services */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E1000005 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B1000001 /* PhotoboothApp.swift */,
+				B1000002 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E1000006 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B1000003 /* AppDestination.swift */,
+				B1000004 /* RootView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		E1000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1000005 /* User.swift */,
+				B1000006 /* PhotoSession.swift */,
+				B1000007 /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1000008 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B1000008 /* AuthViewModel.swift */,
+				B1000009 /* CameraViewModel.swift */,
+				B1000010 /* StyleViewModel.swift */,
+				B1000011 /* CollageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E1000009 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1000011 /* Auth */,
+				E1000012 /* Home */,
+				E1000013 /* Settings */,
+				E1000014 /* Camera */,
+				E1000015 /* Styling */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1000010 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1000026 /* FirebaseService.swift */,
+				B1000027 /* GeminiService.swift */,
+				B1000028 /* StorageService.swift */,
+				B1000031 /* AnalyticsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E1000011 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B1000012 /* SplashScreen.swift */,
+				B1000013 /* LoginScreen.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E1000012 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B1000014 /* HomeScreen.swift */,
+				B1000015 /* GalleryScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E1000013 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B1000016 /* SettingsScreen.swift */,
+				B1000017 /* ReferralScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E1000014 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B1000018 /* IntervalSelectionScreen.swift */,
+				B1000019 /* CameraScreen.swift */,
+				B1000020 /* PhotoReviewScreen.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E1000015 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				B1000021 /* StyleSelectionScreen.swift */,
+				B1000022 /* ProcessingScreen.swift */,
+				B1000023 /* CustomizationScreen.swift */,
+				B1000024 /* PreviewScreen.swift */,
+				B1000025 /* SuccessScreen.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1000001 /* Photobooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = G1000002 /* Build configuration list for PBXNativeTarget "Photobooth" */;
+			buildPhases = (
+				F1000002 /* Sources */,
+				D1000001 /* Frameworks */,
+				F1000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Photobooth;
+			productName = Photobooth;
+			productReference = C1000001 /* Photobooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		H1000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					F1000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = G1000001 /* Build configuration list for PBXProject "Photobooth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1000001;
+			packageReferences = (
+				80108C272F03108300227C32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				80108C302F0310E200227C32 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = E1000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1000001 /* Photobooth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000029 /* Assets.xcassets in Resources */,
+				A1000030 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001 /* PhotoboothApp.swift in Sources */,
+				A1000002 /* AppState.swift in Sources */,
+				A1000003 /* AppDestination.swift in Sources */,
+				A1000004 /* RootView.swift in Sources */,
+				A1000005 /* User.swift in Sources */,
+				A1000006 /* PhotoSession.swift in Sources */,
+				A1000007 /* Photo.swift in Sources */,
+				A1000008 /* AuthViewModel.swift in Sources */,
+				A1000009 /* CameraViewModel.swift in Sources */,
+				A1000010 /* StyleViewModel.swift in Sources */,
+				A1000011 /* CollageViewModel.swift in Sources */,
+				A1000012 /* SplashScreen.swift in Sources */,
+				A1000013 /* LoginScreen.swift in Sources */,
+				A1000014 /* HomeScreen.swift in Sources */,
+				A1000015 /* GalleryScreen.swift in Sources */,
+				A1000016 /* SettingsScreen.swift in Sources */,
+				A1000017 /* ReferralScreen.swift in Sources */,
+				A1000018 /* IntervalSelectionScreen.swift in Sources */,
+				A1000019 /* CameraScreen.swift in Sources */,
+				A1000020 /* PhotoReviewScreen.swift in Sources */,
+				A1000021 /* StyleSelectionScreen.swift in Sources */,
+				A1000022 /* ProcessingScreen.swift in Sources */,
+				A1000023 /* CustomizationScreen.swift in Sources */,
+				A1000024 /* PreviewScreen.swift in Sources */,
+				A1000025 /* SuccessScreen.swift in Sources */,
+				D0FB20542F12AC840080687E /* StartScreen.swift in Sources */,
+				A1000026 /* FirebaseService.swift in Sources */,
+				A1000027 /* GeminiService.swift in Sources */,
+				A1000028 /* StorageService.swift in Sources */,
+				A1000031 /* AnalyticsService.swift in Sources */,
+				D0FB20522F12AC620080687E /* MainTabView.swift in Sources */,
+				D0FB20562F12ACA30080687E /* ProfileScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		I1000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 98B8D368JH;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		I1000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 98B8D368JH;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		I1000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Photobooth/Photobooth.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98B8D368JH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Photobooth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Photobooth;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rikoyoshiura.photobooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		I1000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Photobooth/Photobooth.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98B8D368JH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Photobooth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Photobooth;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rikoyoshiura.photobooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		G1000001 /* Build configuration list for PBXProject "Photobooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				I1000001 /* Debug */,
+				I1000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		G1000002 /* Build configuration list for PBXNativeTarget "Photobooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				I1000003 /* Debug */,
+				I1000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80108C272F03108300227C32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+		80108C302F0310E200227C32 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80108C282F03108300227C32 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80108C272F03108300227C32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		80108C2A2F03108300227C32 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80108C272F03108300227C32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		80108C2C2F03108300227C32 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80108C272F03108300227C32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		80108C2E2F03108300227C32 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80108C272F03108300227C32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		80108C312F0310E200227C32 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80108C302F0310E200227C32 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		80108C332F0310E200227C32 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80108C302F0310E200227C32 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		807E39C72F040A5000F6E3C2 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80108C272F03108300227C32 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = H1000001 /* Project object */;
+}

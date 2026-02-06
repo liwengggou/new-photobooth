@@ -1,0 +1,130 @@
+{
+  "identifier" : "D6B5E64B-3A1F-4D58-8E2C-6A12DE7E5A4C",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "200",
+      "familyShareable" : false,
+      "internalID" : "6A8C1B9E-1234-5678-90AB-CDEF12345678",
+      "localizations" : [
+        {
+          "description" : "Get 1 credit for photo sessions",
+          "displayName" : "1 Credit",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "1クレジットを取得",
+          "displayName" : "1クレジット",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "com.photobooth.credits.1",
+      "referenceName" : "1 Credit",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "800",
+      "familyShareable" : false,
+      "internalID" : "7B9D2C0F-2345-6789-01BC-DEF012345679",
+      "localizations" : [
+        {
+          "description" : "Get 5 credits for photo sessions",
+          "displayName" : "5 Credits",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "5クレジットを取得",
+          "displayName" : "5クレジット",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "com.photobooth.credits.5",
+      "referenceName" : "5 Credits",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "1200",
+      "familyShareable" : false,
+      "internalID" : "8C0E3D1A-3456-7890-12CD-EF0123456780",
+      "localizations" : [
+        {
+          "description" : "Get 10 credits for photo sessions - Best Value!",
+          "displayName" : "10 Credits",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "10クレジットを取得 - お得！",
+          "displayName" : "10クレジット",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "com.photobooth.credits.10",
+      "referenceName" : "10 Credits",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "1234567890",
+    "_developerTeamID" : "XXXXXXXXXX",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 756691200,
+    "_locale" : "en_US",
+    "_storefront" : "JPN",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
