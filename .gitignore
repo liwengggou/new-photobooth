@@ -133,5 +133,5 @@ dist/
 # ===========================================
 # Testing directories (may contain secrets)
 # ===========================================
-resources/testing/.env
-resources/vertex-test/.env
+non-photobooth resources/testing/.env
+non-photobooth resources/vertex-test/.env
